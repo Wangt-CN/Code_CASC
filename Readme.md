@@ -3,7 +3,7 @@
 This is CASC, source code of Cross-Modal Attention with Semantic Consistence for Image-Text Matching submitted to the TNNLS.
 
 
-
+<\br>
 ## Cross-Modal Attention with Semantic Consistence for Image-Text Matching
 
 The proposed CASC is a joint framework that performs cross-modal attention for local alignment and multi-label prediction for global semantic consistence. It directly extracts semantic labels from available sentence corpus without additional labor cost, which further provides a global similarity constraint for the aggregated region-word similarity obtained by the local alignment.
@@ -11,7 +11,7 @@ The proposed CASC is a joint framework that performs cross-modal attention for l
 ![framework](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/framework-xing.jpg)
 
 
-
+<\br>
 ## Proposed Model (CASC)
 
 - Cross-modal Representation Learning
@@ -26,13 +26,13 @@ The proposed CASC is a joint framework that performs cross-modal attention for l
   - Semantic Consistence Preservation
 
 
-
+<\br>
 ## Retrieval Examples
 
 ![example](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/vis_examples.jpg)
 
 
-
+<\br>
 ## Data Download
 
 Download the dataset files and pre-trained models. We use splits produced by [Andrej Karpathy](http://cs.stanford.edu/people/karpathy/deepimagesent/). The raw images can be downloaded from from their original sources [here](http://nlp.cs.illinois.edu/HockenmaierGroup/Framing_Image_Description/KCCA.html), [here](http://shannon.cs.illinois.edu/DenotationGraph/) and [here](http://mscoco.org/).
@@ -52,7 +52,7 @@ python vocab.py --data_path data --data_name coco_precomp
 ```
 
 
-
+<\br>
 ## Usage
 
 - Run vocab.py pre-process training images and captions
