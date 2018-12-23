@@ -8,7 +8,7 @@ This is CASC, source code of Cross-Modal Attention with Semantic Consistence for
 
 The proposed CASC is a joint framework that performs cross-modal attention for local alignment and multi-label prediction for global semantic consistence. It directly extracts semantic labels from available sentence corpus without additional labor cost, which further provides a global similarity constraint for the aggregated region-word similarity obtained by the local alignment.
 
-![framework](https://github.com/submissionwithsupp/MTFN-RR_Code/blob/master/fig/framework_all__.jpg)
+![framework](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/framework-xing.pdf)
 
 
 
