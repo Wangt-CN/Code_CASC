@@ -3,8 +3,8 @@
 This is CASC, source code of Cross-Modal Attention with Semantic Consistence for Image-Text Matching submitted to the TNNLS.
 
 
-  
-  
+
+
 ## Cross-Modal Attention with Semantic Consistence for Image-Text Matching
 
 The proposed CASC is a joint framework that performs cross-modal attention for local alignment and multi-label prediction for global semantic consistence. It directly extracts semantic labels from available sentence corpus without additional labor cost, which further provides a global similarity constraint for the aggregated region-word similarity obtained by the local alignment.
@@ -12,30 +12,39 @@ The proposed CASC is a joint framework that performs cross-modal attention for l
 ![framework](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/framework-xing.jpg)
 
 
-  
-  
+
+
 ## Proposed Model (CASC)
 
 - Cross-modal Representation Learning
   - Image Representation
   - Sentence Representation
+  
 - Cross-modal Attention
   - I2T Attention
   - T2I Attention
   - Local Alignment with Cross-modal Attention
+  
 - Global Semantic Consistence
   - Semantic Labels Extraction
   - Semantic Consistence Preservation
 
    
-   
+## Motivation
+
+![example](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/example_fig1.jpg)
+
+A typical example of the sentence retrieval results obtained by the latest fine-grained matching method SCAN [1] and our proposed CASC. The top 3 retrieved sentences of the two methods are respectively presented in the two rectangles. In particular, the most related semantic labels with their similarity scores to the image can also be predicted by our CASC.
+
+
+
 ## Retrieval Examples
 
 ![example](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/vis_examples.jpg)
 
 
-   
-   
+
+
 ## Data Download
 
 Download the dataset files and pre-trained models. We use splits produced by [Andrej Karpathy](http://cs.stanford.edu/people/karpathy/deepimagesent/). The raw images can be downloaded from from their original sources [here](http://nlp.cs.illinois.edu/HockenmaierGroup/Framing_Image_Description/KCCA.html), [here](http://shannon.cs.illinois.edu/DenotationGraph/) and [here](http://mscoco.org/).
@@ -55,11 +64,17 @@ python vocab.py --data_path data --data_name coco_precomp
 ```
 
 
-   
-   
+
+
 ## Usage
 
 - Run vocab.py pre-process training images and captions
 - Modify the parameters in train.py
 - Run train.py
 - Run evaluation_.py to evaluate the R@K of the model 
+
+
+
+## Results
+
+![example](https://github.com/Wangt-CN/Code_CASC/blob/master/fig/table.png)
